@@ -11,7 +11,7 @@ const newArray =[];
 let somma=0
 
 while(somma < 50){
-    let userNUmber=parseInt(prompt("inserisci un numero"));
+    const userNUmber=parseInt(prompt("inserisci un numero"));
     if(!isNaN (userNUmber)){
         somma = somma+userNUmber
         newArray.push(userNUmber)
