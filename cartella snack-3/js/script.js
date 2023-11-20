@@ -4,17 +4,22 @@ stamparle entrambe altrimenti stampare la più lunga delle due.*/
 
 
 
-const primaParola= prompt("inscerisci una parola");
+const primaParola = prompt("inscerisci una parola");
 const secondaParola = prompt("inserisci un altra parola");
 
-function paroleScritte(){
-
-    
-    if(primaParola = secondaParola){
-        return primaParola,secondaParola;
-    }else if(primaParola > secondaParola){
-        return primaParola
-    }else{
-        return secondaParola
+function paroleScritte(primaParola, paroleScritte) {
+    if (primaParola.length === secondaParola.length) {
+        return true;
     }
+    return false;
 }
+
+if (paroleScritte(primaParola, secondaParola)) {
+    console.log(primaParola, secondaParola)
+}
+else if (primaParola.length > secondaParola) {
+    console.log(primaParola)
+} else {
+    console.log(secondaParola)
+}
+
