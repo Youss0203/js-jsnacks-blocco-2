@@ -1,0 +1,12 @@
+section.container{
+    width: 60%;
+    margin:0 auto
+    
+}
+
+div.wrapper{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap:wrap;
+}

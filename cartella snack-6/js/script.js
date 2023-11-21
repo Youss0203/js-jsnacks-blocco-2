@@ -7,9 +7,13 @@ const userNumber =parseInt(prompt("inserisci un numero"))
 
 const newElement = document.querySelector("div.wrapper")
 
+const squareElement = document.createElement("article")
+squareElement.classList("")
+
+
 
 for(let i = 0; i < userNumber.length; i++){
-    
+
 }
 
 
