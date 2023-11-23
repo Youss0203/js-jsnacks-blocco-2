@@ -10,3 +10,10 @@ div.wrapper{
     display: flex;
     flex-wrap:wrap;
 }
+
+
+.decorationsquare{
+    border:2px solid white;
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+}

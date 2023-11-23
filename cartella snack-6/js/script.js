@@ -8,18 +8,7 @@ const userNumber =parseInt(prompt("inserisci un numero"))
 const newElement = document.querySelector("div.wrapper")
 
 const squareElement = document.createElement("article")
-squareElement.classList("")
-
-
-
-for(let i = 0; i < userNumber.length; i++){
-
-}
-
-
-
-
-
+      squareElement.classList("decorationsquare")
 
 
 
@@ -27,5 +16,9 @@ for(let i = 0; i < userNumber.length; i++){
 
 
 function squareNumber(){
+    const squareElement = document.createElement("article")
+      squareElement.classList.add("decorationsquare")
+}
+for(let i = 0; i < userNumber; i++){
 
 }
