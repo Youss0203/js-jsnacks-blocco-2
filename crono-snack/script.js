@@ -1,13 +1,17 @@
 /*Cliccando su un pulsante, viene avviato un cronometro. Per fermare il cronometro, 
 bisogna cliccare su un secondo pulsante*/
 
-const getNewEl=document.querySelector("h1.crono")
-btnStartElement=document.getElementById("start-button");
-let counter=0;
+const btnStartElement=document.getElementById("start-crono");
+const btnStopELement=document.getElementById("stop-crono")
+const secondsOutput=document.getElementById("seconds")
+
+let clock;
 btnStartElement.addEventListener("click", function(){
-    setInterval(function(){
-        counter++
+    clock = setInterval(function(){
+        secondsOutput.innerHTML =parseInt(secondsOutput.innerText,10)+1;
     },1000)
-    const newElement=document.createElement("p");
-        getNewEl.appendChild(newElement)
+})
+
+btnStopELement.addEventListener("click" , function(){
+    clearInterval(clock)
 })
