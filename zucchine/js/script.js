@@ -6,52 +6,52 @@ Calcola quanto pesano tutte le zucchine. */
 const tipoDiZucchine=[
     {
         'tipo' : 'romanesco',
-        'peso' : '4',
+        'peso' : 4,
         'lunghezza':'20',
     },
     {
         'tipo' : 'tonda',
-        'peso' : '6',
+        'peso' : 6,
         'lunghezza':'22',
     },
     {
         'tipo' : 'fiorentino',
-        'peso' : '15',
+        'peso' : 15,
         'lunghezza':'52',
     },
     {
         'tipo' : 'storta',
-        'peso': '8',
+        'peso': 8,
         'lunghezza':'37',
     },
     {
         'tipo' : 'trombetta',
-        'peso' : '34',
+        'peso' : 34,
         'lunghezza':'102',
     },
     {
         'tipo': 'napoletana',
-        'peso' : '45',
+        'peso' : 45,
         'lunghezza':'98',
     },
     {
         'tipo' : 'gigante',
-        'peso': '56',
+        'peso': 56,
         'lunghezza':'32',
     },
     {
         'tipo' : 'rotta',
-        'peso' : '24',
+        'peso' : 24,
         'lunghezza':'65',
     },
     {
         'tipo' : 'piccola',
-        'peso': '2',
+        'peso': 2,
         'lunghezza':'25',
     },
     {
         'tipo' : 'speciale',
-        'peso' : '32',
+        'peso' : 32,
         'lunghezza':'50',
     },
 
@@ -60,7 +60,7 @@ const tipoDiZucchine=[
 let sommaPeso=0;
 
 for(let i=0; i < tipoDiZucchine.length;i++){
-    sommaPeso+=tipoDiZucchine.peso
+    sommaPeso=sommaPeso+tipoDiZucchine[i].peso
 }
 
 console.log(sommaPeso)
